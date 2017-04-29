@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbWarp.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LinkLabel_Copyright1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblJahre.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblSekunden.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbC.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tbWarp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbStunden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Button_WarpNachC.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Button_WarpNachC.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GroupBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblWarp.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Button_Close.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel_Copyright1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LinkLabel_Copyright1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 32</value>
+  </data>
+  <data name="tbTage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 40</value>
+  </data>
+  <data name="&gt;&gt;lblStrecke.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMinuten.Text" xml:space="preserve">
+    <value>Minutes:</value>
+  </data>
+  <data name="&gt;&gt;Button_WarpNachC.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblSekunden.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblC.Text" xml:space="preserve">
+    <value>Multiple of c:</value>
+  </data>
+  <data name="Button_WarpNachC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="LinkLabel_Copyright1.Text" xml:space="preserve">
+    <value>Copyright © 2004-2014 by Karsten Schramm. All Rights Reserved.</value>
+  </data>
+  <data name="&gt;&gt;tbSekunden.Name" xml:space="preserve">
+    <value>tbSekunden</value>
+  </data>
+  <data name="Button_CNachWarp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="&gt;&gt;tbC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbStunden.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Button_CNachWarp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 72</value>
+  </data>
+  <data name="&gt;&gt;tbStrecke.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbStrecke.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;tbJahre.Name" xml:space="preserve">
+    <value>tbJahre</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 176</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Star Trek Calculator</value>
+  </data>
+  <data name="&gt;&gt;lblWarp.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="Button_CNachWarp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tbTage.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblWarp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbStunden.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="tbWarp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 40</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="tbStrecke.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tbJahre.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="Button_Close.ToolTip" xml:space="preserve">
+    <value>Warpcalculator - Schließen</value>
+  </data>
+  <data name="&gt;&gt;lblSekunden.Name" xml:space="preserve">
+    <value>lblSekunden</value>
+  </data>
+  <data name="&gt;&gt;Button_CNachWarp.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblJahre.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblC.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAAAAACoCAAAFgAAACgAAAAgAAAAQAAAAAEACAAAAAAAgAQAAAAAAAAAAAAAAAEAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAMDcwADwyqYAzP//AJn//wBm//8AM///AP/M
+        /wDMzP8Amcz/AGbM/wAzzP8AAMz/AP+Z/wDMmf8AmZn/AGaZ/wAzmf8AAJn/AP9m/wDMZv8AmWb/AGZm
+        /wAzZv8AAGb/AP8z/wDMM/8AmTP/AGYz/wAzM/8AADP/AMwA/wCZAP8AZgD/ADMA/wD//8wAzP/MAJn/
+        zABm/8wAZv/MADP/zAAA/8wA/8zMAMzMzACZzMwAZszMADPMzAAAzMwA/5nMAMyZzACZmcwAZpnMADOZ
+        zAAAmcwA/2bMAMxmzACZZswAZmbMADNmzAAAZswA/zPMAMwzzACZM8wAZjPMADMzzAAAM8wA/wDMAMwA
+        zACZAMwAZgDMADMAzAAAAMwA//+ZAMz/mQCZ/5kAZv+ZADP/mQAA/5kA/8yZAMzMmQCZzJkAZsyZADPM
+        mQAAzJkA/5mZAMyZmQCZmZkAZpmZADOZmQAAmZkA/2aZAMxmmQCZZpkAZmaZADNmmQAAZpkA/zOZAMwz
+        mQCZM5kAZjOZADMzmQAAM5kA/wCZAMwAmQCZAJkAZgCZADMAmQAAAJkA//9mAMz/ZgCZ/2YAZv9mADP/
+        ZgAA/2YA/8xmAMzMZgCZzGYAZsxmADPMZgAAzGYA/5lmAMyZZgCZmWYAZplmADOZZgAAmWYA/2ZmAMxm
+        ZgCZZmYAZmZmADNmZgAAZmYA/zNmAMwzZgCZM2YAZjNmADMzZgAAM2YA/wBmAMwAZgCZAGYAZgBmADMA
+        ZgAAAGYA//8zAMz/MwCZ/zMAZv8zADP/MwAA/zMA/8wzAMzMMwCZzDMAZswzADPMMwAAzDMA/5kzAMyZ
+        MwCZmTMAZpkzADOZMwAAmTMA/2YzAMxmMwCZZjMAZmYzADNmMwAAZjMA/zMzAMwzMwCZMzMAZjMzADMz
+        MwAAMzMA/wAzAMwAMwCZADMAZgAzADMAMwAAADMAzP8AAJn/AABm/wAAM/8AAP/MAADMzAAAmcwAAGbM
+        AAAzzAAAAMwAAP+ZAADMmQAAmZkAAGaZAAAzmQAAAJkAAP9mAADMZgAAmWYAAGZmAAAAZgAAM2YAAP8z
+        AADMMwAAmTMAAGYzAAAzMwAAADMAAMwAAACZAAAAZgAAADMAAAAAAN0AAAC7AAAAqgAAAIgAAAB3AAAA
+        VQAAAEQAAAAiAADdAAAAuwAAAKoAAACIAAAAdwAAAFUAAABEAAAAIgAA3d3dAFVVVQB3d3cAd3d3AERE
+        RAAiIiIAERERAHcAAABVAAAARAAAACIAAADw+/8ApKCgAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADtAAAAAAAAAAAAAAAAAAAA
+        AAAA7QAAAAAAAAAAAAAAAO3tAAAAAAAAAAAAAAAAAAAAAO3tAAAAAAAAAAAAAAAA7evtAAAAAAAAAAAA
+        AAAAAADt6+0AAAAAAAAAAAAAAADt6+vt7QAAAAAAAAAAAAAA7TLr7QAAAAAAAAAAAAAAAO3r6zIy7e0A
+        AAAAAAAAAO0yMuvtAAAAAAAAAAAAAAAA7evr9usyMu3tAAAAAADtMjIy6+0AAAAAAAAAAAAAAAAA7ev2
+        9vYyMjLt7QAA7TIy9jLtAAAAAAAAAAAAAAAAAADt6/b29vb2MjIy7e0yMvb2Mu0AAAAAAAAAAAAAAAAA
+        AO3r9vb29vb29uvr6zL29vbr7QAAAAAAAAAAAAAAAAAA7evr9vb29vb29vb29vb26+vtAAAAAAAAAAAA
+        AAAAAAAA7ev29vb29vb29vb29vbr7QAAAAAAAAAAAAAAABcXFxft6+v29vb29vb29vb26+vtFxcXFwAA
+        AAAAABcXExMTE+3r6/b29vb29vb29vbr6+0TExMTFxcAAAAAFxMTExMT7evr9vb29vb29vb29uvr7RMT
+        ExMTFwAAAAAXExMTExMT7ev29vb29vb29vb26+0TExMTExMXAAAAABcTEwAAAADt6+v29vb29vb29uvr
+        7QAAAAATExcAAAAAFxMTExMTE+3r6/b29vb29vb26+vtExMTExMTFwAAAAAAFxMTExMTE+3r9vb29vb2
+        9vbr7RMTExMTExcAAAAAAAAXExMTExMT7evr9vb29vb26+vtExMTExMTFwAAAAAAAAAXFxcXFxPt6+v2
+        9vb29vbr6+0TFxcXFxcAAAAAAAAAAAAAAAAAFxft6/b29vb29uvtFxcAAAAAAAAAAAAAAAAAAAAAAAAA
+        AO3r6/b29vbr6+0AAAAAAAAAAAAAAAAAAAAAAAAAAAAA7evr9vb29uvr7QAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA7ev29vb26+0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADt6+v29uvr7QAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAADt6/b26+0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO3r6+vr7QAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAO3r6+0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO3tAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP/////9//+//P//P/x//j/8H/w//Af4P/wB8D/+AGB//gAAf/4AAH/+AAB//wAA//AA
+        AA/AAAADwAAAA8AAAAPHgAHjwAAAA+AAAAfgAAAH8AAAD/+AAf//4Af//+AH///wD///8A////gf///4
+        H////D////5/////////////
+</value>
+  </data>
+  <data name="&gt;&gt;lblTage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_Close.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 232</value>
+  </data>
+  <data name="lblJahre.Text" xml:space="preserve">
+    <value>Years:</value>
+  </data>
+  <data name="tbJahre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="tbSekunden.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="Button_WarpNachC.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;lblMinuten.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tbTage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblJahre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 168</value>
+  </data>
+  <data name="tbStunden.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;lblC.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Button_WarpNachC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStunden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblJahre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSekunden.Text" xml:space="preserve">
+    <value>Seconds:</value>
+  </data>
+  <data name="&gt;&gt;lblJahre.Name" xml:space="preserve">
+    <value>lblJahre</value>
+  </data>
+  <data name="tbJahre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 184</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStrecke.Name" xml:space="preserve">
+    <value>lblStrecke</value>
+  </data>
+  <data name="lblSekunden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="lblWarp.Text" xml:space="preserve">
+    <value>Warp Factor:</value>
+  </data>
+  <data name="lblTage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 16</value>
+  </data>
+  <data name="&gt;&gt;tbWarp.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Button_WarpNachC.Name" xml:space="preserve">
+    <value>Button_WarpNachC</value>
+  </data>
+  <data name="Button_WarpNachC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 40</value>
+  </data>
+  <data name="LinkLabel_Copyright1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 232</value>
+  </data>
+  <data name="lblSekunden.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Button_Close.Name" xml:space="preserve">
+    <value>Button_Close</value>
+  </data>
+  <data name="lblMinuten.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 13</value>
+  </data>
+  <data name="lblTage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStrecke.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 16</value>
+  </data>
+  <data name="tbJahre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="&gt;&gt;Button_Close.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTage.Text" xml:space="preserve">
+    <value>Days:</value>
+  </data>
+  <data name="&gt;&gt;tbMinuten.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblMinuten.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="tbJahre.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblWarp.Name" xml:space="preserve">
+    <value>lblWarp</value>
+  </data>
+  <data name="Button_CNachWarp.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WarpForm</value>
+  </data>
+  <data name="&gt;&gt;lblStunden.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tbTage.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tbC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 88</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="&gt;&gt;tbTage.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Button_CNachWarp.Name" xml:space="preserve">
+    <value>Button_CNachWarp</value>
+  </data>
+  <data name="tbSekunden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 184</value>
+  </data>
+  <data name="lblTage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblStunden.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="tbStunden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblTage.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="Label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblSekunden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbStrecke.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lblJahre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbSekunden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="lblTage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="tbSekunden.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 16</value>
+  </data>
+  <data name="&gt;&gt;tbTage.Name" xml:space="preserve">
+    <value>tbTage</value>
+  </data>
+  <data name="tbTage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="lblStrecke.Text" xml:space="preserve">
+    <value>Distance in Light Years:</value>
+  </data>
+  <data name="tbSekunden.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblJahre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="lblStunden.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblC.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 24</value>
+  </data>
+  <data name="lblStrecke.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 120</value>
+  </data>
+  <data name="&gt;&gt;tbStrecke.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblStunden.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblJahre.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;lblWarp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbMinuten.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="tbStrecke.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tbC.Name" xml:space="preserve">
+    <value>tbC</value>
+  </data>
+  <data name="&gt;&gt;tbSekunden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbTage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblStrecke.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbJahre.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tbMinuten.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel_Copyright1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTage.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblWarp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel_Copyright1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Button_CNachWarp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbWarp.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button_Close.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbJahre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblSekunden.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblJahre.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tbSekunden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="&gt;&gt;ToolTip.Name" xml:space="preserve">
+    <value>ToolTip</value>
+  </data>
+  <data name="Button_Close.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="&gt;&gt;tbMinuten.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tbMinuten.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbJahre.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Button_Close.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 32</value>
+  </data>
+  <data name="tbMinuten.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="tbStunden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 88</value>
+  </data>
+  <data name="tbWarp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Button_CNachWarp.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Button_Close.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="tbMinuten.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblStrecke.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="tbTage.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbC.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>1 Year = 365.2425 Days</value>
+  </data>
+  <data name="&gt;&gt;lblTage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblMinuten.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWarp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 16</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMinuten.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbStrecke.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbStunden.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tbWarp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSekunden.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="tbStunden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="lblStrecke.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblStrecke.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LinkLabel_Copyright1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbC.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="lblStunden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="Button_WarpNachC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;tbC.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lblStrecke.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button_CNachWarp.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbTage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="lblMinuten.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblSekunden.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbMinuten.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblC.Name" xml:space="preserve">
+    <value>lblC</value>
+  </data>
+  <data name="Button_CNachWarp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="&gt;&gt;lblStunden.Name" xml:space="preserve">
+    <value>lblStunden</value>
+  </data>
+  <data name="lblSekunden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 168</value>
+  </data>
+  <data name="lblJahre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblWarp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;tbStunden.Name" xml:space="preserve">
+    <value>tbStunden</value>
+  </data>
+  <data name="&gt;&gt;lblTage.Name" xml:space="preserve">
+    <value>lblTage</value>
+  </data>
+  <data name="tbWarp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="lblStunden.Text" xml:space="preserve">
+    <value>Hours:</value>
+  </data>
+  <data name="lblC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 72</value>
+  </data>
+  <data name="&gt;&gt;Button_Close.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LinkLabel_Copyright1.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>398, 268</value>
+  </data>
+  <data name="lblMinuten.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LinkLabel_Copyright1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblStunden.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="Button_WarpNachC.Text" xml:space="preserve">
+    <value>Warp to c</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 216</value>
+  </data>
+  <data name="&gt;&gt;tbWarp.Name" xml:space="preserve">
+    <value>tbWarp</value>
+  </data>
+  <data name="&gt;&gt;lblC.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="tbMinuten.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 136</value>
+  </data>
+  <data name="&gt;&gt;Button_WarpNachC.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="lblStrecke.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWarp.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbStunden.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbSekunden.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblMinuten.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="tbStrecke.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 136</value>
+  </data>
+  <data name="Button_Close.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 24</value>
+  </data>
+  <data name="lblWarp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 24</value>
+  </data>
+  <data name="lblStunden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="tbJahre.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSekunden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="lblC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="tbStrecke.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="lblStunden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 72</value>
+  </data>
+  <data name="LinkLabel_Copyright1.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>20, 15</value>
+  </data>
+  <data name="&gt;&gt;lblMinuten.Name" xml:space="preserve">
+    <value>lblMinuten</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Warp Calculator</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel_Copyright1.Name" xml:space="preserve">
+    <value>LinkLabel_Copyright1</value>
+  </data>
+  <data name="&gt;&gt;tbMinuten.Name" xml:space="preserve">
+    <value>tbMinuten</value>
+  </data>
+  <data name="&gt;&gt;tbStrecke.Name" xml:space="preserve">
+    <value>tbStrecke</value>
+  </data>
+  <data name="tbC.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="Button_CNachWarp.Text" xml:space="preserve">
+    <value>c to Warp</value>
+  </data>
+  <data name="lblMinuten.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 120</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
