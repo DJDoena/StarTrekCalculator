@@ -1,4 +1,4 @@
-Friend Class StardateCalc
+Friend NotInheritable Class StardateCalc
     Private Const MINSTARDATE As Double = -2322000
     Private Const MAXSTARDATE As Double = 7676999.999999
 
