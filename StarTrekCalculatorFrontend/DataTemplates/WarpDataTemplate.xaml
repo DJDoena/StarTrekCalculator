@@ -42,13 +42,14 @@
             <Label Grid.Column="1" Grid.Row="3" Margin="5,5,5,5"
                 Content="{x:Static local:Resources.Years}" />
             <TextBlock Grid.Column="2" Grid.Row="3" Margin="5,5,5,5" TextAlignment="Right" Padding="2,5,2,0"
-                Text="{Binding Years, StringFormat={}{0:N0} ,ConverterCulture={x:Static gl:CultureInfo.CurrentCulture}}" />
+                Text="{Binding Years, StringFormat={}{0:N0}, ConverterCulture={x:Static gl:CultureInfo.CurrentCulture}}" />
 
             <Label Grid.Column="1" Grid.Row="4" Margin="5,5,5,5"
                 Content="{x:Static local:Resources.Days}" />
             <TextBlock Grid.Column="2" Grid.Row="4" Margin="5,5,5,5" TextAlignment="Right" Padding="2,5,2,0"
                 Text="{Binding Days}" />
 
+            <Image Grid.Column="0" Grid.Row="5" Source="/StarTrekCalculator;component/Starfleet.ico" />
             <Label Grid.Column="1" Grid.Row="5" Margin="5,5,5,5"
                 Content="{x:Static local:Resources.Hours}" />
             <TextBlock Grid.Column="2" Grid.Row="5" Margin="5,5,5,5" TextAlignment="Right" Padding="2,5,2,0"
