@@ -205,6 +205,15 @@ namespace DoenaSoft.STC {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Warp speeds chart.
+        /// </summary>
+        public static string WarpChart {
+            get {
+                return ResourceManager.GetString("WarpChart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Warp factor.
         /// </summary>
         public static string WarpFactor {

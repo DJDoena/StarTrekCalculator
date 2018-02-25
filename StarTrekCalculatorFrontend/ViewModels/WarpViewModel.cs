@@ -4,7 +4,8 @@
     using System.Globalization;
     using System.Threading;
     using System.Windows.Input;
-    using DoenaSoft.ToolBox.Commands;
+    using ToolBox.Commands;
+    using ToolBox.Extensions;
 
     sealed class WarpViewModel : INotifyPropertyChanged
     {
@@ -69,7 +70,7 @@
                         }
                         else
                         {
-                            Lightspeed = Resources.NotApplicable;
+                            Lightspeed = _Warp.IsEmpty() ? string.Empty : Resources.NotApplicable;
 
                             ResetTravelTime();
                         }
@@ -102,7 +103,7 @@
                         }
                         else
                         {
-                            Warp = Resources.NotApplicable;
+                            Warp = _Lightspeed.IsEmpty() ? string.Empty : Resources.NotApplicable;
 
                             ResetTravelTime();
                         }
@@ -121,7 +122,7 @@
                 if (value != _Distance)
                 {
                     _Distance = value;
-                    
+
                     RaisePropertyChanged(nameof(Distance));
 
                     TryCalculateTravelTime();
@@ -231,17 +232,17 @@
 
         void TryCalculateTravelTime()
         {
-            if (CanWarpToLightspeed())
+            if (CanLightspeedToWarp())
+            {
+                double lightspeed = double.Parse(Lightspeed, NumberStyles.AllowDecimalPoint, _Culture);
+
+                TryCalculateTravelTime(lightspeed);
+            }
+            else if (CanWarpToLightspeed())
             {
                 double warp = double.Parse(Warp, NumberStyles.AllowDecimalPoint, _Culture);
 
                 double lightspeed = STC.Warp.WarpToLightspeed(warp);
-
-                TryCalculateTravelTime(lightspeed);
-            }
-            else if (CanLightspeedToWarp())
-            {
-                double lightspeed = double.Parse(Lightspeed, NumberStyles.AllowDecimalPoint, _Culture);
 
                 TryCalculateTravelTime(lightspeed);
             }
@@ -253,7 +254,7 @@
 
         void TryCalculateTravelTime(double lightspeed)
         {
-            if (double.TryParse(Distance, NumberStyles.AllowDecimalPoint, _Culture, out double distance) 
+            if (double.TryParse(Distance, NumberStyles.AllowDecimalPoint, _Culture, out double distance)
                 && (distance > 0 && distance < STC.Warp.MaximumDistance))
             {
                 CalculateTravelTime(lightspeed, distance);
@@ -268,20 +269,21 @@
         {
             TravelTime time = STC.Warp.LightspeedToTime(lightspeed, distance);
 
+            SetTravelTime(time);
+        }
+
+        void ResetTravelTime()
+        {
+            SetTravelTime(new TravelTime());
+        }
+
+        void SetTravelTime(TravelTime time)
+        {
             Years = time.Years;
             Days = time.Days;
             Hours = time.Hours;
             Minutes = time.Minutes;
             Seconds = time.Seconds;
-        }
-
-        void ResetTravelTime()
-        {
-            Years = 0;
-            Days = 0;
-            Hours = 0;
-            Minutes = 0;
-            Seconds = 0;
         }
 
         void RaisePropertyChanged(string propertyName)

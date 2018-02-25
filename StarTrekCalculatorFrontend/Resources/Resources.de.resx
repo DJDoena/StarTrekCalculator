@@ -171,4 +171,7 @@
   <data name="Years" xml:space="preserve">
     <value>Jahre</value>
   </data>
+  <data name="WarpChart" xml:space="preserve">
+    <value>Warpgeschwindigkeitsübersicht</value>
+  </data>
 </root>

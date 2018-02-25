@@ -174,4 +174,7 @@
   <data name="NotApplicable" xml:space="preserve">
     <value>n/a</value>
   </data>
+  <data name="WarpChart" xml:space="preserve">
+    <value>Warp speeds chart</value>
+  </data>
 </root>

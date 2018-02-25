@@ -43,44 +43,15 @@ Friend Class WarpCalc
         If (bInternal) OrElse ((pWarp >= MINWARP) AndAlso (pWarp <= MAXWARP)) Then
             Dim ln10 As Double = Math.Log(10)
 
-            Dim warpInvert As Double = 10 - pWarp
+            Dim inverseWarp As Double = 10 - pWarp
 
-            Dim a7 As Double = 10000 * warpInvert
-            Dim a6 As Double = Math.Log(a7)
-            Dim a5 As Double = a6 / ln10
-            Dim a4 As Double = a5 ^ 5
-            Dim a3 As Double = -0.0058 * a4
-            Dim a2 As Double = Math.Exp(a3)
-            Dim a As Double = 0.20467 * a2
+            Dim a As Double = 0.20467 * Math.Exp(-0.0058 * ((Math.Log(10000 * inverseWarp) / ln10) ^ 5))
 
-            Dim b13 As Double = 8 / 10 * warpInvert
-            Dim b12 As Double = Math.Log(b13)
-            Dim b11 As Double = 10 * Math.PI * b12 / ln10
-            Dim b10 As Double = Math.Cos(b11)
-            Dim b9 As Double = Math.Log(b13)
-            Dim b8 As Double = b9 / ln10
-            Dim b7 As Double = b8 ^ 4
-            Dim b6 As Double = -49.369 * b7
-            Dim b5 As Double = Math.Exp(b6)
-            Dim b4 As Double = 2 * b10
-            Dim b3 As Double = b4 - 1
-            Dim b2 As Double = b3 / 3 * b5
-            Dim b As Double = 1 + b2
+            Dim b As Double = 1 + (2 * Math.Cos(10 * Math.PI * Math.Log(8 / (10 * inverseWarp)) / ln10) - 1) / 3 * Math.Exp(-49.369 * ((Math.Log(8 / (10 * inverseWarp)) / ln10) ^ 4))
 
-            Dim c8 As Double = 2000 * warpInvert
-            Dim c7 As Double = Math.Log(c8)
-            Dim c6 As Double = 10 ^ pWarp
-            Dim c5 As Double = c6 * c7 / ln10
-            Dim c4 As Double = Math.Atan(c5)
-            Const HalfPI As Double = Math.PI / 2
-            Dim c3 As Double = HalfPI - c4
-            Dim c2 As Double = 1.88269 / Math.PI * c3
-            Dim c As Double = 1 + c2
+            Dim c As Double = 1 + 1.88269 / Math.PI * (Math.PI / 2 - Math.Atan((10 ^ pWarp) * Math.Log(2000 * inverseWarp) / ln10))
 
-            Dim d4 As Double = a * b * c
-            Dim d3 As Double = 1 + d4
-            Dim d2 As Double = 10 / 3 * d3
-            Dim d As Double = pWarp ^ d2
+            Dim d As Double = pWarp ^ (10 / 3 * (1 + (a * b * c)))
 
             Return Math.Round(d, 6)
         Else
@@ -99,7 +70,7 @@ Friend Class WarpCalc
                 minWarp = 9.999999
             ElseIf pLightspeed >= 204851 Then
                 minWarp = 9.99999
-            ElseIf pLightspeed >= 199515 Then
+            ElseIf pLightspeed >= 199516 Then
                 minWarp = 9.9999
                 maxWarp = 9.999999
             ElseIf pLightspeed >= 10268 Then
@@ -108,7 +79,7 @@ Friend Class WarpCalc
             ElseIf pLightspeed >= 7913 Then
                 minWarp = 9.99
                 maxWarp = 9.9999
-            ElseIf pLightspeed >= 3052 Then
+            ElseIf pLightspeed >= 3053 Then
                 minWarp = 9.9
                 maxWarp = 9.999
             ElseIf pLightspeed >= 1517 Then
@@ -134,9 +105,9 @@ Friend Class WarpCalc
                 maxWarp = 5
             ElseIf pLightspeed >= 11 Then
                 minWarp = 2
-                maxWarp = 3
+                maxWarp = 4
             ElseIf pLightspeed > 1 Then
-                maxWarp = 2
+                maxWarp = 3
             Else
                 maxWarp = 1
             End If

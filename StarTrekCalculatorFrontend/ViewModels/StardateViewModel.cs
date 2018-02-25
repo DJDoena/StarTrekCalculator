@@ -5,12 +5,10 @@
     using System.Globalization;
     using System.Threading;
     using System.Windows.Input;
-    using DoenaSoft.ToolBox.Commands;
+    using ToolBox.Commands;
 
     sealed class StardateViewModel : INotifyPropertyChanged
     {
-        //readonly ICommand _StardateToDateCommand;
-
         readonly ICommand _DateToStardateCommand;
 
         readonly ICommand _SystemTimeToStardateCommand;
@@ -25,7 +23,6 @@
 
         public StardateViewModel()
         {
-            //_StardateToDateCommand = new RelayCommand(StardateToDate, CanStardateToDate);
             _DateToStardateCommand = new RelayCommand(DateToStardate);
             _SystemTimeToStardateCommand = new RelayCommand(SystemTimeToStardate);
             _Culture = Thread.CurrentThread.CurrentCulture;
@@ -49,7 +46,7 @@
                 if (value != _Stardate)
                 {
                     _Stardate = value;
-                    
+
                     if (_Roundtrip == false && CanStardateToDate())
                     {
                         _Roundtrip = true;
