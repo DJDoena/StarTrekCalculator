@@ -64,8 +64,8 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
-    <Reference Include="Xceed.Wpf.Toolkit, Version=3.6.17613.9190, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.Toolkit.3.6.17613.09190\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -144,10 +144,12 @@
     <Resource Include="DJDSOFT.ICO" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Resource Include="Starfleet.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Starfleet.ico" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
