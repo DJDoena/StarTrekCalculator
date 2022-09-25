@@ -1,6 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                     x:Class="DoenaSoft.STC.Resources.Images">
+                     x:Class="DoenaSoft.StarTrekCalculatorApp.Resources.Images">
     <BitmapImage x:Key="Starfleet" UriSource="starfleet.ico"/>
-    <BitmapImage x:Key="WarpChart" UriSource="warpchart.jpg"/>
 </ResourceDictionary>

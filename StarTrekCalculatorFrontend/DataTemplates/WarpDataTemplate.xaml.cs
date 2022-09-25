@@ -1,10 +1,8 @@
-﻿namespace DoenaSoft.STC
+﻿namespace DoenaSoft.StarTrekCalculatorApp
 {
     using System.Diagnostics;
     using System.IO;
     using System.Windows;
-    using System.Windows.Media.Imaging;
-    using Resources;
 
     public partial class WarpDataTemplate
     {
@@ -12,20 +10,23 @@
         {
             try
             {
-                var image = (BitmapImage)((new Images())["WarpChart"]);
-
-                var fileName = Path.Combine(Path.GetTempPath(), "warpchart.jpg");
-
-                var encoder = new PngBitmapEncoder();
-
-                encoder.Frames.Add(BitmapFrame.Create(image));
-
-                using (var fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.Read))
+                using (var image = StarTrekCalculator.Images.GetWarpChart())
                 {
-                    encoder.Save(fileStream);
-                }
+                    var fileName = Path.Combine(Path.GetTempPath(), "warpchart.jpg");
 
-                Process.Start(fileName);
+                    using (var fileStream = File.Create(fileName))
+                    {
+                        var buffer = new byte[8192];
+
+                        int bytesRead;
+                        while ((bytesRead = image.Read(buffer, 0, buffer.Length)) > 0)
+                        {
+                            fileStream.Write(buffer, 0, bytesRead);
+                        }
+                    }
+
+                    Process.Start(fileName);
+                }
             }
             catch
             {

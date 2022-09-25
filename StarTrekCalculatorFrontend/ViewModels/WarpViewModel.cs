@@ -1,10 +1,10 @@
-﻿namespace DoenaSoft.STC
+﻿namespace DoenaSoft.StarTrekCalculatorApp
 {
     using System.ComponentModel;
     using System.Globalization;
     using System.Threading;
     using System.Windows.Input;
-    using STC.Resources;
+    using Resources;
     using ToolBox.Commands;
     using ToolBox.Extensions;
     using Calc = StarTrekCalculator;

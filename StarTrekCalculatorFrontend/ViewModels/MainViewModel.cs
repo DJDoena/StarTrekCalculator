@@ -1,4 +1,4 @@
-﻿namespace DoenaSoft.STC
+﻿namespace DoenaSoft.StarTrekCalculatorApp
 {
     internal sealed class MainViewModel
     {

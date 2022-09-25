@@ -1,9 +1,9 @@
-﻿<ResourceDictionary x:Class="DoenaSoft.STC.WarpDataTemplate"
+﻿<ResourceDictionary x:Class="DoenaSoft.StarTrekCalculatorApp.WarpDataTemplate"
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:gl="clr-namespace:System.Globalization;assembly=mscorlib"
-                    xmlns:local="clr-namespace:DoenaSoft.STC"
-                    xmlns:res="clr-namespace:DoenaSoft.STC.Resources">
+                    xmlns:local="clr-namespace:DoenaSoft.StarTrekCalculatorApp"
+                    xmlns:res="clr-namespace:DoenaSoft.StarTrekCalculatorApp.Resources">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="../Resources/Images.xaml" />
     </ResourceDictionary.MergedDictionaries>
