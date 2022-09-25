@@ -3,6 +3,7 @@
     using System.Diagnostics;
     using System.IO;
     using System.Windows;
+    using Calc = StarTrekCalculator;
 
     public partial class WarpDataTemplate
     {
@@ -10,7 +11,7 @@
         {
             try
             {
-                using (var image = StarTrekCalculator.Images.GetWarpChart())
+                using (var image = Calc.Images.GetWarpChartJpeg())
                 {
                     var fileName = Path.Combine(Path.GetTempPath(), "warpchart.jpg");
 
