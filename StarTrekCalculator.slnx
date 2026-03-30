@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="StarTrekCalculatorFrontend/StarTrekCalculatorFrontend.csproj" Id="3738504b-0ada-4dad-b958-4a972e419517">
+    <Platform Project="x64" />
+  </Project>
+</Solution>

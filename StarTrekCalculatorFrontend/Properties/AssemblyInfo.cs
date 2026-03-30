@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("StarTrekCalculatorFrontend")]
-[assembly: AssemblyCopyright("Copyright ©  2007 - 2022")]
+[assembly: AssemblyCopyright("Copyright ©  2007 - 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
